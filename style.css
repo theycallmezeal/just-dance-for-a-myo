@@ -1,0 +1,69 @@
+@font-face {
+    font-family: Tungsten;
+    src: url("Tungsten.ttf");
+}
+
+body {
+	background-color: rgb(1, 0, 123);
+	display: flex;
+	justify-content: space-around;
+}
+
+button {
+	z-index: 999;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	
+	font-family: Tungsten;
+	color: white;
+	background-color: #c22b07;
+	border: none;
+	font-size: 50px;
+	border: outset 3px #8c2007;
+	
+	padding: 30px;
+}
+
+button:active {
+	background-color: #8c2007;
+}
+
+video, #stats {
+	margin-top: 20px;
+}
+
+video {
+	border-radius: 5px;
+}
+
+#stats {
+	position: relative;
+	width: 150px;
+	text-align: center;
+	font-family: Tungsten, Impact, sans-serif;
+	font-weight: bold;
+	color: white;
+	font-size: 60px;
+	border-bottom: solid 3px white;
+	
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 1%, rgba(0,0,0,0) 30%, rgba(0,0,0,0.3) 100%);
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 1%,rgba(0,0,0,0) 30%,rgba(0,0,0,0.3) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 1%,rgba(0,0,0,0) 30%,rgba(0,0,0,0.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#4d000000',GradientType=0 );
+}
+
+#stats p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#bar {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	background-color: rgb(3, 222, 134);
+	height: 5px;
+	width: 150px;
+}
